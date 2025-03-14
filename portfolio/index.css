@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .container {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  header {
+    border-bottom: 1px solid #eee;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .header-left a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .header-right a {
+    margin-left: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  .header-right a:hover {
+    color: #666;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .hamburger span {
+    width: 25px; height: 3px;
+    background: #333;
+    margin-bottom: 5px;
+    transition: 0.4s;
+  }
+  
+
+  .hero {
+    padding: 2rem 0;
+  }
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .hero-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  .hero-text button {
+    background: #FF6464;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  .hero-text button:hover {
+    background: #ff7b7b;
+  }
+  .hero-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+ 
+  .recent-posts {
+    padding: 2rem 0;
+    background-color: #EDF7FA;
+    ;
+  }
+  .recent-posts .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .recent-posts h2 {
+    font-size: 1.5rem;
+  }
+  .recent-posts a {
+    font-size: 0.95rem;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  .recent-posts a:hover {
+    color: #0056b3;
+  }
+  .posts {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .post {
+    flex: 1 1 300px;
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: box-shadow 0.3s;
+  }
+  .post:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .post h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .post p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .post .meta {
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .featured-works {
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+  }
+  .featured-works h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .work-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .work-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .work-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .work-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  .work-info .year-cat {
+    color: #888;
+  }
+  
+ 
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header-content {
+      position: relative;
+      height: auto;
+    }
+    .header-right {
+      display: none; 
+    }
+    .hamburger {
+      display: flex; 
+    }
+  
+    .hero-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .hero-image {
+      margin-bottom: 1rem;
+    }
+  
+    .posts {
+      flex-direction: column;
+    }
+    .work-item {
+      flex-direction: column;
+    }
+    .work-item img {
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+    }
+  }
+.box{
+    background-color: black;
+    color: white;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 16px;
+    display: flex;
+}
